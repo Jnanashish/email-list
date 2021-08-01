@@ -1,38 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500&display=swap");
+body {
+  background-color: #fcfcfc;
+}
 .App {
-  text-align: center;
+  margin: 100px auto;
+  padding: 100px 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  display: block;
+  margin: 0px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App p {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.App input {
+  background-color: #fff;
+  width: 500px;
+  box-shadow: 0px 16px 32px 0px rgba(221, 230, 237, 0.4);
+  border: 2px solid #e3e3e3;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 6px;
+}
+.App input:focus {
+  outline: none;
+  border: 2px solid #0068ff;
+}
+.App button {
+  font-weight: 600;
+  background-color: #0068ff;
+  border: 2px solid #0068ff;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(221, 230, 237, 0.4);
+  cursor: pointer;
+  margin-left: 20px;
+}
+.App button:hover {
+  background-color: #00a088;
+  border: 2px solid #00a088;
+}
+
+.error-msg {
+  font-family: "Poppins", sans-serif;
+  color: #eb5757;
+}
+
+.thank {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 700px) {
+  .App {
+    padding: 10px 10px;
+    width: 95%;
+    margin: 120px 0px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App p {
+    margin-top: 30px;
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .App h1 {
+    font-size: 3rem;
+  }
+  .App input {
+    width: 88%;
+  }
+  .App button {
+    width: 98%;
+    margin: 10px 0px;
   }
 }
